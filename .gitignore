@@ -1,0 +1,43 @@
+# Ignore everything
+/*
+
+# Un-ignore the directories that contain useful files
+# Note: we just want to add the paths, not the contents,
+#  so for each directory we un-ignore, we re-ignore its contents
+!/etc
+/etc/*
+!/etc/default
+/etc/default/*
+!/etc/sysconfig
+/etc/sysconfig/*
+!/etc/init.d
+/etc/init.d/*
+!/home
+/home/*
+!/home/buildbot
+/home/buildbot/*
+!/home/buildbot/centos
+/home/buildbot/centos/*
+!/home/buildbot/centos/openxt-centos
+/home/buildbot/centos/openxt-centos/*
+!/home/buildbot/centos/openxt-centos/build
+/home/buildbot/centos/openxt-centos/build/*
+
+# Un-ignore the files/directories we want
+!/.gitignore
+!/etc/hosts
+!/etc/default/*
+!/etc/sysconfig/*
+!/etc/init.d/buildbot
+!/home/buildbot/*
+!/home/buildbot/centos/openxt-centos/build/*
+
+# Re-ignore the files/directories we don't want
+*~
+*.log
+*.pid
+*sqlite*
+/home/buildbot/.*
+/home/buildbot/master/.htpasswd
+/home/buildbot/master/openxt-centos/
+/home/buildbot/centos/openxt-centos/build/openxt/
